@@ -1,0 +1,113 @@
+#include <iostream>
+using namespace std;
+int main() {
+    /*
+Write a program that uses while/for loops to perform the following steps :
+	a. prompt the user to input two integers firstNum and secondNum (firstNum must be lower than secondNum).
+	b. Output all odd numbers between firstNum and secondNum
+	c. Output the sum of all even numbers between firstNum and secondNum
+	d. Output the numbers and their squares between 1 and 10
+	e. Output the sum of square of odd numbers between firstNum and secondNum
+	f. Output all uppercase letters
+     */
+// Declaration of Variables
+    int firstNum, secondNum ;
+    char Respond_Odd_Num, Respond_Even_Num , Respond_All_Uppercase;
+
+/*
+ * // First Entry points of integers
+    cout << "Type in the first integer : " ;
+    cin >> firstNum;
+    cout << "Type in the second integer : " ;
+    cin >> secondNum;
+
+*/
+
+// some random variables to make the below if function to run
+int q =1 ;
+int r=2;
+
+// Code for firstNum to be less than secondNum
+    if(r > q){
+        // while loop to make sure firstNum is less than secondNum
+        while(firstNum > secondNum){
+            cout << "Your first Input should be less than your second input" << endl;
+            cout << "Type in the first integer : " ;
+            cin >> firstNum;
+            cout << "Type in the second integer : " ;
+            cin >> secondNum;
+
+        // question for printing out odd numbers between firstNum and secondNum
+            cout << " Print out all odd numbers between FirstNum and SecondNum? : " ;
+            cin >> Respond_Odd_Num;
+
+        // if condition for printing out odd numbers and their sum between firstNum and secondNum
+            if( Respond_Odd_Num == 'y' || Respond_Odd_Num == 'Y'){
+
+                  if(int n=0; n<secondNum; n++){
+
+                      do{
+                          int odd_num = (2*n) -1;
+                          int sum = 0 + odd_num ;
+                          cout << odd_num << "the sum is " << sum << endl ;
+                      }while(n > firstNum && n < secondNum);
+
+                  }
+
+            }
+
+        // question for printing out even numbers between firstNum and secondNum
+            cout << "print out all even numbers between FirstNum and SecondNum/ : ";
+            cin >> Respond_Even_Num;
+
+        // if condition for printing out even numbers between firstNum and secondNum
+            if( Respond_Even_Num == 'y' || Respond_Even_Num == 'Y'){
+
+            }
+
+        //  Code for output the numbers and their squares between 1 and 10
+            if(int i = 1 ; i <10 ; i++){
+                int d=  i*i ;
+                cout << i << "and its square is " << d << endl;
+            }
+
+        // question for Output all uppercase letters
+            cout << "Print Out All Uppercase characters? " ;
+            cin >> Respond_All_Uppercase;
+            if(Respond_All_Uppercase == 'y' || Respond_All_Uppercase == 'Y'){
+                cout << "A" << endl;
+                cout << "B" << endl;
+                cout << "C" << endl;
+                cout << "D" << endl;
+                cout << "E" << endl;
+                cout << "F" << endl;
+                cout << "G" << endl;
+                cout << "H" << endl;
+                cout << "I" << endl;
+                cout << "J" << endl;
+                cout << "K" << endl;
+                cout << "L" << endl;
+                cout << "M" << endl;
+                cout << "N" << endl;
+                cout << "O" << endl;
+                cout << "P" << endl;
+                cout << "Q" << endl;
+                cout << "R" << endl;
+                cout << "S" << endl;
+                cout << "T" << endl;
+                cout << "U" << endl;
+                cout << "V" << endl;
+                cout << "W" << endl;
+                cout << "X" << endl;
+                cout << "Y" << endl;
+                cout << "Z" << endl;
+            }
+
+        }
+    }
+
+
+
+
+    return 0;
+}
