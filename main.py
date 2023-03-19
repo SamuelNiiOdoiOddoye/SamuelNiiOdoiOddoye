@@ -1,11 +1,16 @@
-# This is a python program to test for a palindrome
-word_Palindrome = input("Type in a palindrome word: ")
+# This is a sample Python script.
 
-Palindrome_word = word_Palindrome[::-1]
-print(Palindrome_word)
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-if Palindrome_word == word_Palindrome :
-    print(word_Palindrome , " is a PALINDROME")
 
-else:
-    print(Palindrome_word , " is not a PALINDROME")
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
