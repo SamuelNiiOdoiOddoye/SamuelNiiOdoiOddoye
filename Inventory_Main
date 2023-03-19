@@ -1,0 +1,91 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+    /*  
+
+    You must now write a computer programme which will be able to allow the store to manage all aspects of their stock.
+     This includes entering new stock, allocating existing stock and the ability to run reports based on these elements.  
+
+    You must 
+    Identify a problem to solve for the store, using a computer programme
+    Develop a computer programme using an appropriate Object Orientated Programming language (OOP) that can be used by the retail store to solve the problem
+    Ensure all code within the programme is explained using comments
+
+    */
+
+    // x_one is the variable which holds the quantity by which alcohol should be increased
+         int x_one = 0 ;
+
+    // x_two is the variable which holds the quantity by which alcohol should be increased    
+        int x_two = 0;
+
+    // Alcohol is the variable which holds how many bottles of alcohol are available in memory
+        int Alcohol = 0;
+
+    // Food_Items is the variable that holds how many food items are available in the inventory
+        int Food_Items  = 0 ;
+
+    // Inventory_Query holds the value of "Y" or "N" for if you want to see the available commodities in memory     
+        string Inventory_Query ;
+    
+    // Inventory_Query_Size is the variable which the value of "Y" or "N" for if you change the quantity of items available in inventory
+        string Inventory_Query_Size ;
+
+    // Inventory_Query_Size_Sign is the variable which holds the sign that should affect the available commodities in stock    
+        string Inventory_Query_Size_Sign ;
+    
+        cout << "Hello Welcome to the Inventory Wizard"  << endl ;
+         cout << "Display available Stock? " ;
+         cin >> Inventory_Query ;
+
+    // If the user wants to see the available commodities in stock
+    if (Inventory_Query == "Y"){
+        cout << "You Have " << Alcohol << " bottles of alcohol. " << endl;
+        cout << "You Have " << Food_Items << " food items. " << endl;
+        cout << "Do you want to change the size of the inventory? ";
+        cin >> Inventory_Query_Size;
+
+    // If the user wants to change the size of the available inventory
+            if(Inventory_Query_Size == "Y"){
+                cout << "which operation of change do you want to perform ? " ;
+                cin >> Inventory_Query_Size_Sign ;
+               }
+
+    // If the user wants wants to increase the size of commodities currently available in stock            
+                    if(Inventory_Query_Size_Sign == "+"){
+                        cout << "When to decrease the items in stock introduce " << " - " << "Before the number" << endl;
+                        cout << "by how much should Alcohol be Increased? ";
+                        cin >> x_one;
+                        cout << "by how much should Food items be Increased? ";
+                        cin >> x_two ; 
+                         Alcohol = Alcohol + x_one ;
+                         Food_Items = Food_Items +x_two;
+                        cout << "You Have " << Alcohol << " bottles of alcohol. " << endl;
+                        cout << "You Have " << Food_Items << " food items. " << endl;
+
+                    }
+   }
+            
+    
+ 
+    // If the user does not want to see commodities currently available in stock 
+    else if( Inventory_Query == "N"){
+         cout << "Do you want to change the size of the inventory? ";
+        cin >> Inventory_Query_Size;
+
+    // If the user does not change the size of currently available commodities in stock    
+             if(Inventory_Query_Size == "N"){
+                
+                         Alcohol = Alcohol + x_one ;
+                         Food_Items = Food_Items +x_two;
+                        cout << "You Have " << Alcohol << " bottles of alcohol. " << endl;
+                        cout << "You Have " << Food_Items << " food items. " << endl;
+
+                    }
+    }
+
+    
+
+    return 0;
+    }
