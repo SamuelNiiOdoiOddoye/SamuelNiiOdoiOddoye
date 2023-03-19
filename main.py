@@ -1,50 +1,44 @@
-from array import *
-# create a method encrypt
-# encrypt should : 
-# - Allow user to enter 2 sets of inputs one of data type string and the other int
-# - Assign the text and int data types to thier own unique variables
-# Create an array within the encrypt method to hold alphabets
-# scan the input to take the individual letters, skip 5 to 5 letters from the alphabet
-# then print out "The encoded text is: "
+# write a function in python that accepts 2 string parameters.
+# The first parameter will be a string of characters, and the second parameter will be the same string of characters,
+# but they'll be in a different order and have one extra character.
+# For example if the first parameter is "eueiieo" and the second is "ieoedue" then the function should return "d"
 
+# create a function to take in two inputs of the same data type string
+# shuffle the elements of the second variable and then print out the difference
+def Spot_The_Difference():
+    #this point of the function is to accept 2 inputs from the user
+    #this is where two variables are declared and assigned to hold to the entries
+    First_Entry = input("Type in your first word here: ")
+    Second_Entry =input("Type in your second entry here: ")
 
-# creating global variables
+    #creating a variable to hold the splitted elements of the First_Entry and Second_Entry
+    First_Entry_Splitted = First_Entry.split()
+    Second_Entry_Splitted = Second_Entry.split()
+    First_Entry_Sum = 0
+    Second_Entry_Sum = 0
 
-# creating a method called encrypt
-def encrypt():
-    # creating a variable of name Plain_Text to hold the user's input (data type of string)
-    Plain_Text = input("Type in your desired text: ").upper()
+# a for loop to change every character in First_Entry to it's ASCII equivalvent and sum up all the ASCII equivalent's
+    for c in First_Entry:
+        First_Entry_Sum += int(ord(c))
 
-    # creating a variable to hold the split of the variable Plain_Text
-    # Plain_Text_Splitted = Plain_Text.split()
+# a for loop to change every character in Second_Entry to it's ASCII equivalent and sum up all the ASCII equivalent's
+    for c in Second_Entry:
+        Second_Entry_Sum += int(ord(c))
 
-    # A character array to hold letters of the alphabet
-    Alphabets = [ ' ','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-                 'U', 'V', 'W', 'X', 'Y', 'Z', ]
+# an if condition to subtract the sum of the second entry from the first entry if the first entry sum is greater than
+# the second entry sum
+    if First_Entry_Sum > Second_Entry_Sum:
+        l1 = First_Entry_Sum - Second_Entry_Sum
+        print(chr(l1), "is the unique entry of the two entries and is found in", First_Entry)
 
-    # creating a variable of name shift to hold the user's input (data type of int)
-    shift = int(input("Type in the desired number of skips here: "))
+# an if condition to subtract the sum of the first entry from the second entry if the second entry sum is greater than
+# the first entry sum
+    if Second_Entry_Sum > First_Entry_Sum:
+        l2 = Second_Entry_Sum - First_Entry_Sum
+        print(chr(l2), "is the unique entry of the two entries and is found in", Second_Entry)
 
-    # a for loop to skip the letter in Plain_Text by shift
-    Text_Shifted=""
+# an if condition if both entries have the same ASCII sum
+    if Second_Entry_Sum == First_Entry_Sum:
+        print("There is no unique character in both entries")
 
-    for c in Plain_Text:
-        Y = ord(c) + shift
-        Text_Shifted += chr(Y)
-
-    print("The encoded text is : ", Text_Shifted)
-
-    if shift > 25:
-       shift = shift-25
-       for c in Plain_Text:
-           Y = ord(c) + shift
-           Text_Shifted += chr(Y)
-
-
-
-
-
-
-
-encrypt()
-
+Spot_The_Difference()
