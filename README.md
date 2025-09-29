@@ -1,11 +1,11 @@
 - 👋 Hi, I’m @SamuelNiiOdoiOddoye
-- 👀 I’m interested in Gaming, Coding and ANIME
+- 👀 I’m interested in Gaming, Coding, SCI-FI, and ANIME
 - 🌱 I’m currently learning python, c++, web development and java as well as javascript
-- 💞️ I’m looking to collaborate on any type of project
-- 📫 How to reach me whatsapp +233242100866 or on twitter @Oddoye_Samuel
+- 💞️ I’m looking to collaborate on any project
+- 📫 How to reach me: WhatsApp +233242100866, on Twitter @Oddoye_Samuel, also available via samuel.oddoye@icloud.com
  
 
 <!---
 SamuelNiiOdoiOddoye/SamuelNiiOdoiOddoye is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
+You can click the Preview link to view your changes.
 --->
