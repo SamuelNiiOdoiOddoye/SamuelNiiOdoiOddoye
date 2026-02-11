@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @SamuelNiiOdoiOddoye
 - 👀 I’m interested in Gaming, Coding, SCI-FI, and ANIME
-- 🌱 I’m currently learning python, c++, web development and java as well as javascript
+- 🌱 I’m currently working with python, c++, web development and java as well as javascript
 - 💞️ I’m looking to collaborate on any project
 - 📫 How to reach me: WhatsApp +233242100866, on Twitter @Oddoye_Samuel, also available via samuel.oddoye@icloud.com
  
