@@ -107,7 +107,7 @@ Python desktop application for managing:
 
 ---
 
-### 🛒 HoodVendor
+<!-- ### 🛒 HoodVendor
 
 Multi-vendor e-commerce platform built for Ghana and beyond.
 
@@ -119,18 +119,19 @@ Features:
 - Responsive Design
 
 ---
-
+-->
 ### 💻 Itelix Device Store
 
 Modern e-commerce website showcasing responsive web development and UI/UX skills.
 
 ---
 
-### 🤖 Telix AI *(In Progress)*
+### 🤖 Telix AI *(Private Project)*
 
-An intelligent AI ecosystem focused on productivity, automation, and smart living.
+An AI-powered platform focused on intelligent software, automation, and productivity.
 
----
+> Currently in research and development.
+> 
 
 # 📈 GitHub Stats
 
