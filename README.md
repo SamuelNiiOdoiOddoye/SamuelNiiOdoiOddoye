@@ -162,7 +162,7 @@ An AI-powered platform focused on intelligent software, automation, and producti
 
 💻 **GitHub:** https://github.com/SamuelNiiOdoiOddoye
 
-💼 **LinkedIn:** *(Add your profile link)*
+💼 **LinkedIn:** https://www.linkedin.com/in/samuel-oddoye-a4520a1b3?utm_source=share_via&utm_content=profile&utm_medium=member_ios
 
 🌐 **Portfolio:** *(Coming Soon)*
 
